@@ -1,0 +1,12 @@
+------------------------------------------------------------------- Snake and ladders -----------------------------------------------------------------
+
+O jogo possui:
+	- Um tabuleiro com 100 posições;
+	- A linha que contém o número 1 deve ser a mais a baixo e a de número 100 a mais acima;
+	- Cada linha contém 10 posições;
+	- Todos os jogadores iniciam na posição 1 e ganham quando chega na posição 100;
+	- O jogo pode ter no mínimo 2 e no máximo 4 jogadores;
+	- Se o jogador parar na ponta de baixo da escada ele avança até a ponta de cima da escada;
+	- Se o jogador para na cabeça da cobra ele volta até o rabo da cobra;
+	- Há casas bonus no jogo fazendo o jogador puxa uma carta. Esta pode fazer com que o jogador avance ou retroceda de 1-3 casas;
+	

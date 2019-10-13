@@ -3,10 +3,33 @@
 O jogo possui:
 	- Um tabuleiro com 100 posições;
 	- A linha que contém o número 1 deve ser a mais a baixo e a de número 100 a mais acima;
-	- Cada linha contém 10 posições;
+	- Cada linha contém 10 posições;(Decission)
 	- Todos os jogadores iniciam na posição 1 e ganham quando chega na posição 100;
 	- O jogo pode ter no mínimo 2 e no máximo 4 jogadores;
 	- Se o jogador parar na ponta de baixo da escada ele avança até a ponta de cima da escada;
 	- Se o jogador para na cabeça da cobra ele volta até o rabo da cobra;
 	- Há casas bonus no jogo fazendo o jogador puxa uma carta. Esta pode fazer com que o jogador avance ou retroceda de 1-3 casas;
+
+Decisões:
+	=> Há geração das casas serão feitas de modo estático;
+	=> Cobra,escada,carta implementam uma interface em comun que possui um método "fazalgo()";
+	
+Entidades do Domínio:
+	- Cobra;
+	- Carta(Carta abstrata || interface):
+		-> Cartas que retrocetem posições;
+		-> Cartas que avançam posições;
+	- Escada: ;
+	- jogador:
+		   -> Sabe a posição que ele está;
+	- Casas|posição:
+		Pode ter:
+			-> Cabeça da cobra;
+			-> Ponta da escada;
+			-> Carta;
+
+Entidades do Sistema:
+	- Jogo:
+		-> Sabe quem é o jogador da vez;
+		-> Possui uma lista de posições;
 	

@@ -2,5 +2,6 @@ package screens;
 
 public interface IScreen {
     void showMenu();
-    void input();
+    int input();
+    void showMessage(String message);
 }
